@@ -1,5 +1,7 @@
 {
     "creator": "$in ($in Interactions#5103)",
     "client": "Sinc",
-    "version": 2.1
+    "version": 2.1,
+    "Game1": 4282985734,
+    "Game2": 3652625463
 }

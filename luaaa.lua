@@ -477,7 +477,7 @@ local script = G2L["28"];
 			wait(2)
 			ts:Create(loaderanim, info, {Size = UDim2.new(0, 15,0, 165)}):Play()
 			-- script.Parent.Parent.Parent.Parent.Main.Visible = true
-			loadstring(getgenv().link)()
+			loadstring(game:HttpGet(link))()
 			script.Parent.Parent.Parent.Parent.Top:Destroy()
 			
 			break

@@ -10,9 +10,6 @@
 -- Instances: 46 | Scripts: 2 | Modules: 0
 local G2L = {};
 
-function G2L:Load(link)
-	local link = loadstring(link)()
-end
 
 -- StarterGui.London
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
@@ -480,7 +477,7 @@ local script = G2L["28"];
 			wait(2)
 			ts:Create(loaderanim, info, {Size = UDim2.new(0, 15,0, 165)}):Play()
 			-- script.Parent.Parent.Parent.Parent.Main.Visible = true
-			
+			loadstring(getgenv().link)()
 			script.Parent.Parent.Parent.Parent.Top:Destroy()
 			
 			break
